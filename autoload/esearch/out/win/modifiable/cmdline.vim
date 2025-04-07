@@ -135,7 +135,7 @@ let s:string_re   = '(\3%(\\.|.){-})'
 let s:flags_re    = '(\3\s*[&cegiInp#lr]*\s*)'
 let s:snomagic_re = '\vsno%[magic]'
 " :[range]s[ubstitute]/{pattern}/{string}/[flags] [count]
-let s:substitute_command_re = '\v^'
+let s:substitute_command_re = '\C\v^'
       \ . s:colons_re . s:range_re . '=' . s:colons_re
       \ . '(s%[ubstitute]|sno%[magic]|sm%[agic]|ES%[ubstitute])'
       \ . '%('
